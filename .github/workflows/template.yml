@@ -100,7 +100,7 @@ jobs:
   buildWindows:
 
     name: Build for Windows 🖥️
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
     steps:
@@ -144,7 +144,7 @@ jobs:
   buildAndroid:
   
     name: Build for Android 📱
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
     steps:
