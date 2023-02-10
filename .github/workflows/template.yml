@@ -2,6 +2,16 @@ name: GameCI Template 🎮
 
 on: push
 
+workflow_call:
+    secrets:
+      UNITY_EMAIL:
+        required: true
+      UNITY_PASSWORD:
+        required: true
+      UNITY_TOTP_KEY:
+        required: true
+
+
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 
