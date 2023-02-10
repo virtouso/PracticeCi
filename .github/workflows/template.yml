@@ -54,7 +54,7 @@ jobs:
 #          path: ${{ steps.testRunner.outputs.artifactsPath }}
 #
  buildWebGL:
-   needs: testRunner
+
    name: Build for WebGL 🖥️
    runs-on: ubuntu-latest
    strategy:
